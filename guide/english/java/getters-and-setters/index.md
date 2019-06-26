@@ -4,9 +4,9 @@ title: Getters & Setters
 
 # Getters & Setters
 
-Getter is a method for getting data from the user on the output screen and assigning it to a variable , eg- 'getText()'. Setter method is used to set a specific value to a variable and can be changed only by changing the value in the the code eg- 'setText()'.
+A Getter is a method for retrieving data from the user on the output screen and assigning it to a variable , eg- 'getText()'. The Setter method is used to set a specific value to a variable and can be changed only by changing the value in the the code eg- 'setText()'.
 
-Getters and Setters are used to effectively protect your data, particularly when creating classes. For each instance variable, a getter method returns its value while a setter method sets or updates its value. Getters and setters are also known as accessors and mutators, respectively.
+Getters and Setters are used to effectively protect your data, particularly when creating classes. For each instance variable, a getter method returns its value while a setter method sets or updates its value. Getters and setters are also known as accessors and mutators, respectively. Getters and Setters help you to achieve encapsulation: an obejct-oriented programming principle based on making variables private to protect data.
 
 By convention, getters start with `get`, followed by the variable name, with the first letter of the variable name capitalized. Setters start with `set`, followed by the variable name, with the first letter of the variable name capitalized.
 
@@ -40,7 +40,7 @@ public static void main(String[] args) {
 // Outputs "Red"
 ```
 ****************
-Getters and setters allow control over the values. You may validate the given value in the setter before actually setting the value.
+Getters and setters allow control over the values. You may validate the given value in the setter before actually setting the value. The Setter and Getter methods are the only way to manipulate and return the data. Using methods to modify data is very useful and can help prevent future errors.
 
 
 ## Why getter and setter?
