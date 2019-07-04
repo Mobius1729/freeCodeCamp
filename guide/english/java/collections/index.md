@@ -38,12 +38,57 @@ Other important interfaces extending the collection interface are:
 	A collection containing only unique elements.
 
 - `Queue`:
-	Implement the queue behavior where elements are added only in the beginning and removed from the end.
+	Implement the queue behavior where elements are added only in the beginning and removed from the end (i.e. Queues operate on a First-in, First-out basis).
 
 - `List`:
-	This collection handles a list/sequence of objects.
+	This collection handles a list/sequence of objects. A list is a collection of unordered objects.
 
 These four interfaces (`Collection`, `Set`, `Queue`, `List`) along with `SortedSet`, `Deque` and `NavigableSet` form the collective `Collection` hierarchy.
+## The ArrayList Class
+`ArrayList` is Java's implementation of the dynamic array. An `ArrayList` is a resizable-array implementation of the List interface. The `ArrayList` class provides methods to manipulate the size of the array.
+
+**Create an ArrayList**
+```java
+ArrayList<Integer> intList = new LinkedList<Integer>(); // Creates a new list of Integer objects.
+```
+**Add elements to the list**
+
+```java
+intList.add(new Integer(1)); // Add 1 to the end.
+
+intList.add(2); // This works as Java provides autoboxing and unboxing of primitive datatypes and their respective wrapper classes.
+
+intList.addFirst(3); // Add to the beginning of the list.
+
+intList.addLast(2); // Add to the end of the list.
+
+intList.add(2, 5); // Add element 5 at index 2.
+```
+
+Let us print the list:
+
+```java
+System.out.println(intList); // toString() method is automatically called on the list
+```
+
+Output:
+
+```java
+[3, 1, 5, 2, 2]
+```
+
+**Retrieve elements from the list**
+```java
+intList.get(3); // Returns element at index 3 i.e. 2.
+
+intList.getFirst(); // Get the first element i.e. 3.
+
+intList.getLast(); // Returns last element i.e. 2.
+
+intList.indexOf(2); // Returns first occured index of 2 i.e. 3.
+
+intList.lastIndexOf(2); // Returns last occured index of 2 i.e. 4.
+```
 
 ## The LinkedList Class
 
