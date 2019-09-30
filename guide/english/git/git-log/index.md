@@ -59,6 +59,7 @@ The ```--patch``` flag causes ```git log ``` to display
 * the files that you modified
 * the location of the lines that you added or removed
 * the specific changes that you made
+* insertions are highlighted in green and deletes are highlighted in red
 
 ### View specified number of commits by author
 
@@ -68,11 +69,11 @@ To view a specified number of commits by an author to the current repo (optional
 
 #### Start at a specific commit
 
-To start ```git log``` at a specific commit, add the SHA:
+To start ```git log``` at a specific commit, add the SHA hash of the commit:
 
 ```git log 7752b22```
 
-This will display the commit with the SHA 7752b22 and all of the commits made before that commit. You can combine this with any of the other flags. 
+This will display the commit with the SHA hash of 7752b22 and all of the commits made prior. You can combine this with any of the other flags. 
 
 #### --graph
 
