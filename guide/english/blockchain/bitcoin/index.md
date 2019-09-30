@@ -3,7 +3,7 @@ title: Basics of Bitcoin & Cyptocurrency
 ---
 
 #### Bitcoin is a collection of concepts and technologies that form the basis of a digital money ecosystem, including: 
-- A decentralized peer to peer network (enabled by the _Bitcoin protocol_)
+- A decentralized, peer to peer network (enabled by the _Bitcoin protocol_)
 - A public transaction ledger (_the blockchain_)
 - A decentralized mathematical and deterministic currency issuance mechanism (distributed mining and the  _“Proof of Work”_ concept)
 - A decentralized transaction verification system (transaction script)
@@ -24,5 +24,5 @@ the Elliptic Curve Digital Signature Algorithm)
     - All the users are able to read , write and get updated on that notebook.
 2. Ownership of bitcoins is established through digital keys, Bitcoin addresses, and digital signatures.
 3. _Digital Keys_ are crated and stored offline and consist of a mathematically-related Private-Public key-pair, created using the Elliptic Curve Signature Algorithm(_ECDSA_)
-4. The **Private key(Privkey)** is initially generated at random, and is kept secret at all times. It is used by the current owner of bitcoins to digitally sign a Bitcoin transaction, when he authorizes the transfer to the new user. A transaction 
-5. The **Public Key(Pubkey)** is generated from the Private Key using a one-way cryptpgraphic hash function. It is used by the owner to validate a transaction's digital signature.
+4. The **Private key(Privkey)** is initially generated at random, and is kept secret at all times. It is used by the current owner of bitcoins to digitally sign a Bitcoin transaction, when he authorizes the transfer to the new user. The private key is used to sign digital signatures (hence verifying the transaction is authentic). The private key enables access to all Bitcoin associated with the corresponding public key. 
+5. The **Public Key(Pubkey)** is generated from the Private Key using a one-way cryptpgraphic hash function - Bitcoin uses ECDSA, an elliptic-curve algorithm. It is used by the owner to validate a transaction's digital signature. The public key contains the funds of a specified address; when you send someone Bitcoin, you're really sending it to their public key address. 
